@@ -50,7 +50,7 @@ class App extends React.Component {
         return (
             <div>
                 <h1> To Do List </h1>
-                    <CreateToDo createTask={this.createTask.bind(this)}/>
+                    <CreateToDo tasks={this.state.tasks} createTask={this.createTask.bind(this)}/>
                     <TodoList tasks={this.state.tasks}
                     toggleTask={this.toggleTask.bind(this)}
                     saveTask={this.saveTask.bind(this)}
